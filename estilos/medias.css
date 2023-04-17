@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* estilo para telas grandes*/
+
+@media screen and (min-width: 641px) {
+    main {
+        font-size: 0.9em;
+        width: 99%;
+    }
+
+    main > img {
+        display: inline-block;
+        height: 100%;
+        vertical-align: bottom;
+    }
+
+    main > section {
+        display: inline-block;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    section > p {
+        margin: 10px 0px;
+    }
+
+    form > div > span {
+        vertical-align: bottom;
+    }
+
+    @media screen and (max-width: 768px) {
+        main {
+            height: 269px;
+            max-width: 640px;
+        }
+
+        main > img {
+            width: 35%;
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        main > section {
+            border-radius: 0px 20px 20px 0px;
+            width: 65%;
+            margin-left: -3.6px;
+        }
+
+        form > p > input {
+            height: 35px;
+        }
+
+        form > input, div {
+            height: 32px;
+            padding: 5px;
+        }
+    }
+
+    @media screen and (min-width: 769px){
+        main {
+            max-width: 800px;
+            height: 300px;
+        }
+
+        main > img {
+            width: 30%;
+            border-radius: 0px 20px 20px 0px;
+            position: absolute;
+            left: 70%;
+        }
+
+        main > section {
+            text-align: left;
+            width: 70%;
+            border-radius: 20px 0px 0px 20px;
+            padding: 20px;
+        }
+
+        main > section > h1 {
+            font-size: 32px;
+        }
+
+        form > p > input {
+            height: 40px;
+        }
+
+        form > input, div {
+            height: 38px;
+        }
+    }
+}
