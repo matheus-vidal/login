@@ -3,6 +3,10 @@
 /* estilo para telas grandes*/
 
 @media screen and (min-width: 641px) {
+    body {
+        background-image: linear-gradient(90deg, #e6dcdc, #cabebd);
+    } 
+
     main {
         font-size: 0.9em;
         width: 99%;
@@ -22,6 +26,14 @@
     
     section > p {
         margin: 10px 0px;
+    }
+
+    form > p > label {
+        width: 15%;
+    }
+
+    form > p > input {
+        width: 85%;
     }
 
     form > div > span {
@@ -45,8 +57,13 @@
             margin-left: -3.6px;
         }
 
+        form > p > label {
+            width: 15%;
+        }
+
         form > p > input {
             height: 35px;
+            width: 85%;
         }
 
         form > input, div {
