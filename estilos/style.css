@@ -33,6 +33,7 @@ main > img {
 }
 
 main > section {
+    display: block;
     padding: 20px;
     box-sizing: border-box;
     border-radius: 0px 0px 20px 20px;
@@ -40,6 +41,9 @@ main > section {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     width: 100%;
+
+    /*transition: width .3s, height .3s;
+    transition-timing-function: ease;*/
 }
 
 section > h1 {
@@ -97,7 +101,7 @@ form > input:hover, div:hover {
     cursor: pointer;
 }
 
-form > input {
+form > input[type=submit] {
     background-color: #8B7E85;
     margin-bottom: 3px;
 }

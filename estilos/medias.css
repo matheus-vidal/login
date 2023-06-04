@@ -13,15 +13,7 @@
     }
 
     main > img {
-        display: inline-block;
         height: 100%;
-        vertical-align: bottom;
-    }
-
-    main > section {
-        display: inline-block;
-        height: 100%;
-        padding: 10px;
     }
     
     section > p {
@@ -47,14 +39,17 @@
         }
 
         main > img {
-            width: 35%;
+            float: left;
+            width: 30%;
             border-radius: 20px 0px 0px 20px;
         }
 
         main > section {
             border-radius: 0px 20px 20px 0px;
-            width: 65%;
-            margin-left: -3.6px;
+            float: right;
+            width: 70%;
+            height: 100%;
+            padding: 10px;
         }
 
         form > p > label {
@@ -66,7 +61,7 @@
             width: 85%;
         }
 
-        form > input, div {
+        form > input[type=submit], div {
             height: 32px;
             padding: 5px;
         }
@@ -75,19 +70,20 @@
     @media screen and (min-width: 769px){
         main {
             max-width: 800px;
-            height: 300px;
+            height: 319px;
         }
 
         main > img {
-            width: 30%;
+            width: 50%;
+            float: right;
             border-radius: 0px 20px 20px 0px;
-            position: absolute;
-            left: 70%;
         }
 
         main > section {
             text-align: left;
-            width: 70%;
+            width: 50%;
+            height: 100%;
+            float: left;
             border-radius: 20px 0px 0px 20px;
             padding: 20px;
         }
@@ -100,7 +96,7 @@
             height: 40px;
         }
 
-        form > input, div {
+        form > input[type=submit], div {
             height: 38px;
         }
     }
